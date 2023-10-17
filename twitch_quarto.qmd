@@ -1,0 +1,68 @@
+---
+title: "Initiation à *Quarto*"
+author: "Marie Vaugoyeau"
+format:
+  html: 
+    toc: true
+    code-fold: true
+    echo: false
+    eval: false
+  pdf: 
+    toc: true
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+#| label: nom_du_chunk
+#| echo: false
+
+1 + 1
+```
+
+Je vous conseille d'utiliser [le guide Quarto](https://quarto.org/docs/authoring/markdown-basics.html).
+
+## Ajout de callout
+
+::: callout-tip
+## Les statistiques
+
+Ensemble de méthodes qui ont pour objet la **collecte**, le **traitement** et l'**interprétation** de l'ensemble des **données d'observation** relatives à une **population statistique** (groupe d'individus ou d'unités) ou concernant un phénomène quelconque.
+:::
+
+::: callout-note
+## A retenir
+
+Il faut réfléchir pour analyser les données de **manière adaptée** et **interpréter correctement** les résultats
+:::
+
+::: callout-warning
+## A retenir
+
+Il faut réfléchir pour analyser les données de **manière adaptée** et **interpréter correctement** les résultats
+:::
+
+::: callout-important
+## Erreurs à ne pas commettre
+
+-   r fort ne signifie pas une **relation de cause à effet** entre les deux variable\
+-   r faible ne signifie pas **pas de relation entre les deux variables**. Il peut y avoir une relation non linéaire\
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+```{r}
+#| label: graphique_iris
+#| echo: true
+
+plot(iris)
+
+
+
+```
